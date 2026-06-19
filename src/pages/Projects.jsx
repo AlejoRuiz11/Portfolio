@@ -27,7 +27,7 @@ export default function Projects() {
         <div className="inner">
           <h1 className="sec-title sr">Projects</h1>
           <p className="sr d1" style={{ color: 'var(--subtle)', marginBottom: 30, maxWidth: 580, marginTop: 8 }}>
-            From enterprise-grade multi-tier systems and VR simulations to probabilistic engines and ML research — each project driven by architectural thinking.
+            From microservices platforms in C# / .NET and Spring Boot to multi-tier enterprise systems and UX-focused web apps — each project driven by software-engineering and architectural thinking.
           </p>
 
           {/* Filter tabs */}

@@ -14,7 +14,7 @@ export default function Skills() {
         <div className="inner">
           <h1 className="sec-title sr">Skills</h1>
           <p className="sr d1" style={{ color: 'var(--subtle)', marginBottom: 48, maxWidth: 560, marginTop: 8 }}>
-            Software architecture and design patterns are the foundation. Machine learning, game systems, and web development build on top of it.
+            C# / .NET and full-stack web development are the core, built on solid software architecture and design patterns. Concurrency, UX and data work round it out.
           </p>
 
           {/* Skills grid — architecture listed first in data.js */}

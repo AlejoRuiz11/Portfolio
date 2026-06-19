@@ -99,7 +99,7 @@ export default function Home() {
         <div className="inner">
           <h2 className="sec-title sr">Featured Projects</h2>
           <p className="sr d1" style={{ color: 'var(--subtle)', marginBottom: 44, maxWidth: 560, marginTop: 8 }}>
-            Highlighted work spanning software architecture, simulation systems, and probabilistic modeling.
+            Highlighted work spanning C# / .NET, full-stack web development, microservices and software architecture.
           </p>
 
           <div className="sr d2" style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
