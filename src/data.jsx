@@ -8,9 +8,9 @@
 
 export const personal = {
   name:      'Alejandro Ruiz',
-  role:      'Systems Engineering Student · Software Developer',
-  tagline:   'C# / .NET · ASP.NET · Full-Stack Web · Design Patterns · 3 Countries',
-  bio:       'Systems Engineering student and software developer focused on building maintainable, well-architected applications. I work across the stack with C# / .NET (ASP.NET) and Java (Spring Boot) on the backend, and JavaScript with React on the frontend. My projects are built on solid software-engineering foundations - design patterns (Singleton, DTO/DAO, Factory, Strategy, Observer), microservices, REST APIs and clean layered architecture - and I work comfortably in agile Scrum teams. Strong additional command of C++, Python and SQL, a real eye for UX, and international academic experience across Colombia, Argentina and Austria, with coursework conducted fully in English.',
+  role:      'Systems Engineering Student · C# / .NET Developer',
+  tagline:   'C# / .NET · Software Design · Unity & C# Systems · React · 3 Countries',
+  bio:       'Systems Engineering student and software developer whose core strengths are C# / .NET and software design. I build well-structured applications and apply object-oriented design and design patterns where they actually earn their place - to keep code decoupled, testable and easy to extend - rather than for their own sake. A lot of my work is in C# and Unity, building interactive, real-time systems with clean, modular architectures, plus backend services in ASP.NET and Spring Boot. I also build modern web interfaces with React, with deployed, real-world sites to show for it, and I work comfortably in agile Scrum teams. Solid command of C++, Python and SQL, an eye for UX, and international academic experience across Colombia, Argentina and Austria, with coursework conducted fully in English.',
   email:     'alejoruiz1110@gmail.com',
   github:    '',
   linkedin:  '',
@@ -49,39 +49,28 @@ export const education = [
   },
 ]
 
-/** Projects - ordered by relevance to C#/.NET + full-stack software engineering */
+/** Projects - ordered by relevance to C#/.NET + software engineering */
 export const projects = [
   {
     id:        'barbershop',
     title:     'Barbershop Platform - Microservices (C# / .NET + Spring Boot)',
     short:     'Barbershop Microservices Platform',
-    desc:      'Full-stack barbershop management platform built on a microservices architecture. C# / ASP.NET and Java / Spring Boot services behind a REST API, a React + Vite SPA frontend, and Singleton + DTO/DAO design patterns throughout.',
+    desc:      'Barbershop management platform built on a microservices architecture. C# / ASP.NET and Java / Spring Boot services behind a REST API, a React + Vite frontend, and a deliberate set of design patterns (Singleton, DAO/DTO) keeping each service decoupled.',
     longDesc:  'A production-style management platform designed around a microservices architecture, where independent services own their domains (appointments & queue, product catalog, authentication) and communicate over well-defined REST contracts. Backend services are implemented in two stacks running side by side: C# / ASP.NET and Java / Spring Boot, demonstrating polyglot service design against a shared API surface.\n\nThe codebase applies disciplined design patterns end to end: the Singleton pattern manages shared resources and configuration; the DAO (Data Access Object) pattern isolates all persistence behind clean interfaces; and DTOs (Data Transfer Objects) decouple the API contract from internal domain models, keeping each service independently deployable and testable. The React + Vite frontend consumes the REST API for transactional operations (appointments, catalog, inventory) and reflects live queue state for clients and barbers.\n\nThe emphasis throughout is software engineering: separation of concerns, layered architecture (controller -> service -> DAO), and a structure where each service can scale and evolve on its own.',
     tech:      ['C#', 'ASP.NET', 'Spring Boot', 'React', 'Vite', 'Microservices', 'Singleton', 'DTO/DAO', 'REST API', 'Layered Architecture'],
     cat:       'arch',
     star:      'Microservices + .NET',
     highlight: true,
     minor:     false,
-  },
-  {
-    id:        'dealership',
-    title:     'Dealership Management System - Multi-Tier Enterprise App',
-    short:     'Dealership System',
-    desc:      'Multi-tier enterprise system: React frontend + Spring Boot REST API + Oracle SQL, with a secondary admin client. Singleton, Observer and MVC applied across every layer.',
-    longDesc:  'A full-stack enterprise system built to demonstrate cross-tier software architecture. The Spring Boot server implements strict MVC with service/repository layering; the Singleton pattern manages shared resources; the Observer pattern drives cross-client event propagation. The Oracle database was designed with full normalization, ER modeling and relational constraints. Every architectural decision was deliberate - the project was built as much for the design quality as for the functionality, and maps directly to the kind of layered, service-oriented backend used in real engineering teams.',
-    tech:      ['Spring Boot', 'React', 'Oracle SQL', 'MVC', 'Singleton', 'Observer', 'REST API', 'OOP'],
-    cat:       'arch',
-    star:      'Full-stack + 3 tiers',
-    highlight: true,
-    minor:     false,
+    demo:      'https://house-campaz.vercel.app/',
   },
   {
     id:        'faroti',
-    title:     'FAROTI - Corporate Web Platform (React)',
+    title:     'FAROTI - Corporate Web Platform',
     short:     'FAROTI',
-    desc:      'Responsive corporate website for a digital-transformation consultancy. Built in React with a strong focus on UX, clear content hierarchy and a polished, modern visual identity.',
-    longDesc:  'A responsive informational web platform for FAROTI - a consulting firm that helps organizations navigate digital transformation through software solutions. The work centered on front-end engineering and user experience: a clean component structure in React, careful attention to UX and content hierarchy, responsive layouts across devices, and a modern visual identity that communicates trust. A practical demonstration of building polished, user-facing web tools with JavaScript frameworks.',
-    tech:      ['React', 'JavaScript', 'HTML', 'CSS', 'Responsive Design', 'UI/UX'],
+    desc:      'Responsive corporate website for a digital-transformation consultancy, with a strong focus on UX, clear content hierarchy and a polished, modern visual identity.',
+    longDesc:  'A responsive informational web platform for FAROTI - a consulting firm that helps organizations navigate digital transformation through software solutions. The work centered on front-end development and user experience: clean, semantic markup, careful attention to UX and content hierarchy, responsive layouts across devices, and a modern visual identity that communicates trust. A practical demonstration of building polished, user-facing websites.',
+    tech:      ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'UI/UX'],
     cat:       'web',
     star:      'UX-focused web',
     highlight: true,
@@ -116,16 +105,41 @@ export const projects = [
   },
   {
     id:        'laparranda',
-    title:     'La Parranda - Distribution Web Platform (React)',
+    title:     'La Parranda - Distribution Web Platform',
     short:     'La Parranda',
-    desc:      'Responsive web platform for a beverage distributor in Ibague. React frontend with a browsable product catalog, brand portfolio and a clean, fast UX for wholesale and retail visitors.',
-    longDesc:  'A responsive informational web platform for La Parranda, a distributor based in Ibague, Colombia. Built in React with a focus on front-end engineering and user experience: a browsable product catalog, clear brand presentation and easy navigation across devices. A practical example of shipping a real, deployed web application with JavaScript and React.',
-    tech:      ['React', 'JavaScript', 'HTML', 'CSS', 'Responsive Design'],
+    desc:      'Responsive web platform for a beverage distributor in Ibague, with a browsable product catalog, brand portfolio and a clean, fast UX for wholesale and retail visitors.',
+    longDesc:  'A responsive informational web platform for La Parranda, a distributor based in Ibague, Colombia. Built with a focus on front-end development and user experience: a browsable product catalog, clear brand presentation and easy navigation across devices. A practical example of shipping a real, deployed web application.',
+    tech:      ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
     cat:       'web',
     star:      '',
     highlight: false,
     minor:     false,
     demo:      'https://la-parranda.vercel.app/',
+  },
+  {
+    id:        'searchme',
+    title:     'SearchMe - Django Web Platform',
+    short:     'SearchMe',
+    desc:      'A Django web platform for lost & found reports in university environments, built on a clean REST architecture with serialized API responses and a probabilistic matching module.',
+    longDesc:  'SearchMe is a Django web application following a clean REST architecture: serialized API responses, structured models and a layered backend. Its standout feature is a matching module that estimates how likely two reports refer to the same object, factoring in attribute similarity, location overlap and time proximity. The project demonstrates web application development and REST API design, with a focused piece of applied probabilistic logic on top.',
+    tech:      ['Django', 'Python', 'REST API', 'PostgreSQL', 'Probabilistic Matching'],
+    cat:       'web',
+    star:      '',
+    highlight: false,
+    minor:     false,
+    github:    'https://github.com/AlejoRuiz11/SearchMe',
+  },
+  {
+    id:        'dealership',
+    title:     'Dealership Management System - Multi-Tier Enterprise App',
+    short:     'Dealership System',
+    desc:      'Multi-tier enterprise system: React frontend + Spring Boot REST API + Oracle SQL, with a secondary admin client. Singleton, Observer and MVC applied across every layer.',
+    longDesc:  'A multi-tier client-server system built to demonstrate cross-tier software architecture. The Spring Boot server implements strict MVC with service/repository layering; the Singleton pattern manages shared resources; the Observer pattern drives cross-client event propagation. The Oracle database was designed with full normalization, ER modeling and relational constraints. Every architectural decision was deliberate - the project was built as much for the design quality as for the functionality, and maps directly to the kind of layered, service-oriented backend used in real engineering teams.',
+    tech:      ['Spring Boot', 'React', 'Oracle SQL', 'MVC', 'Singleton', 'Observer', 'REST API', 'OOP'],
+    cat:       'arch',
+    star:      'Multi-tier · 3 layers',
+    highlight: false,
+    minor:     false,
   },
   {
     id:        'minishop',
@@ -150,19 +164,6 @@ export const projects = [
     star:      'UX under constraint',
     highlight: false,
     minor:     false,
-  },
-  {
-    id:        'searchme',
-    title:     'SearchMe - Django Web Platform',
-    short:     'SearchMe',
-    desc:      'A Django web platform for lost & found reports in university environments, built on a clean REST architecture with serialized API responses and a probabilistic matching module.',
-    longDesc:  'SearchMe is a Django web application following a clean REST architecture: serialized API responses, structured models and a layered backend. Its standout feature is a matching module that estimates how likely two reports refer to the same object, factoring in attribute similarity, location overlap and time proximity. The project demonstrates full-stack web development and API design, with a focused piece of applied probabilistic logic on top.',
-    tech:      ['Django', 'Python', 'REST API', 'PostgreSQL', 'Probabilistic Matching'],
-    cat:       'web',
-    star:      '',
-    highlight: false,
-    minor:     false,
-    github:    'https://github.com/AlejoRuiz11/SearchMe',
   },
   {
     id:        'ml-workshops',
@@ -207,24 +208,23 @@ export const projects = [
 /** Skills - software-engineering first, ordered to the role */
 export const skills = {
   'Languages & .NET': [
-    'C#', '.NET', 'Java', 'JavaScript', 'C++', 'Python', 'PHP', 'R', 'SQL', 'HTML / CSS',
+    'C#', '.NET', 'Java', 'C++', 'JavaScript', 'Python', 'SQL', 'PHP', 'R', 'HTML / CSS',
   ],
-  'Backend & Web Frameworks': [
-    'ASP.NET', 'Spring Boot', 'Django', 'Laravel', 'React', 'Vite', 'REST API Design', 'Microservices',
+  'C# & Unity / Real-Time Systems': [
+    'Unity', 'C# / .NET', 'Real-Time Systems', 'Multi-threading', 'Concurrency', 'Event-Driven Systems', 'Object Pooling',
   ],
-  'Software Architecture & Patterns': [
-    'SOLID Principles', 'Clean Architecture', 'Layered Architecture', 'MVC',
-    'Singleton', 'DTO / DAO', 'Repository Pattern', 'Factory', 'Abstract Factory',
-    'Strategy', 'Observer', 'Command', 'Dependency Injection', 'OOP', 'Domain Modeling', 'System Design',
+  'Software Design': [
+    'Object-Oriented Design', 'SOLID Principles', 'Clean / Layered Architecture',
+    'MVC', 'Factory', 'Strategy', 'Observer', 'Singleton', 'Dependency Injection',
   ],
-  'Concurrency & Systems': [
-    'Multi-threading', 'Concurrency', 'Event-Driven Systems', 'Real-Time Systems', 'Object Pooling',
+  'Backend & Web': [
+    'ASP.NET', 'Spring Boot', 'REST API Design', 'Microservices', 'Django', 'Laravel', 'React', 'Vite',
   ],
   'Workflow & UX': [
     'Agile / Scrum', 'Git', 'Teamwork', 'UI / UX Design', 'Responsive Design', 'Testing',
   ],
   'Databases': [
-    'Oracle SQL', 'MySQL', 'PostgreSQL', 'MySQL Workbench', 'Relational Databases', 'Data Modeling', 'ERD',
+    'Oracle SQL', 'MySQL', 'PostgreSQL', 'Relational Databases', 'Data Modeling', 'ERD',
   ],
   'Data & ML (supporting)': [
     'Statistical Computing', 'Supervised Learning', 'Unsupervised Learning', 'Naive Bayes', 'Neural Networks', 'PyTorch',
@@ -278,7 +278,6 @@ export const hobbies = [
 
 /** Architecture patterns for Home page showcase */
 export const archPatterns = [
-  'SOLID', 'Singleton', 'DTO / DAO', 'Factory', 'Strategy', 'Observer',
-  'MVC', 'Repository', 'Microservices', 'Clean Architecture',
-  'Layered Architecture', 'REST API Design', 'Dependency Injection', 'OOP',
+  'OOP', 'SOLID', 'Clean Architecture', 'Layered Architecture', 'MVC',
+  'Factory', 'Strategy', 'Observer', 'Singleton', 'Dependency Injection',
 ]

@@ -27,7 +27,7 @@ export default function Home() {
             {/* Left */}
             <div>
               <div className="pill" style={{ marginBottom: 26, animation: 'pageIn .4s ease both' }}>
-                🏗️ Systems Engineering · Software Architecture
+                🏗️ C# / .NET · Software Engineering · Unity
               </div>
 
               <h1 style={{ fontSize: 'clamp(2.6rem,6vw,4.8rem)', fontWeight: 900, lineHeight: 1.06, marginBottom: 14, animation: 'pageIn .45s .06s ease both' }}>
@@ -51,9 +51,9 @@ export default function Home() {
               {/* Stats */}
               <div className="stats-row" style={{ display: 'flex', gap: 28, flexWrap: 'wrap', paddingTop: 22, borderTop: '1px solid rgba(255,255,255,0.05)', animation: 'pageIn .45s .3s ease both' }}>
                 {[
-                  { icon: '🏗️', val: '14+', label: 'Patterns' },
+                  { icon: '🎮', val: '5+',  label: 'Unity / C# Builds' },
                   { icon: '🌍', val: '3',   label: 'Countries' },
-                  { icon: '📦', val: '8+',  label: 'Projects'  },
+                  { icon: '📦', val: '10+', label: 'Projects'  },
                   { icon: '💻', val: '9+',  label: 'Languages' },
                 ].map(s => (
                   <div key={s.label} style={{ textAlign: 'center' }}>
@@ -99,7 +99,7 @@ export default function Home() {
         <div className="inner">
           <h2 className="sec-title sr">Featured Projects</h2>
           <p className="sr d1" style={{ color: 'var(--subtle)', marginBottom: 44, maxWidth: 560, marginTop: 8 }}>
-            Highlighted work spanning C# / .NET, full-stack web development, microservices and software architecture.
+            Highlighted work spanning C# / .NET, Unity real-time systems, microservices and software design.
           </p>
 
           <div className="sr d2" style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
